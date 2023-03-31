@@ -129,7 +129,7 @@ bucks14 <- bucks14 %>% mutate(x = as.numeric(as.character(locationX)) / 10, y = 
 bucks14$x <- bucks14$x * -1 
 #Creating the Chart
 p1 <- plot_court(court_themes$light) + 
-  geom_point(data = bucks14, aes(x = x, y = y, color = isShotMade, fill = isShotMade),alpha = .3, size = 1.5, shape = 21, stroke = .5) +  
+  geom_point(data = bucks14, aes(x = x, y = y, color = isShotMade, fill = isShotMade),alpha = .5, size = 1.5, shape = 21, stroke = .5) +  
   scale_color_manual(values = c("#009429","#F7A500"), aesthetics = "color", breaks=c("TRUE", "FALSE"), labels=c("Made", "Missed")) +
   scale_fill_manual(values = c("#009429","#F7A500"), aesthetics = "fill", breaks=c("TRUE", "FALSE"), labels=c("Made", "Missed")) +
   scale_x_continuous(limits = c(-27.5, 27.5)) +
@@ -163,7 +163,7 @@ bucks17 <- bucks17 %>% mutate(x = as.numeric(as.character(locationX)) / 10, y = 
 bucks17$x <- bucks17$x * -1 
 #Creating the Chart
 p1 <- plot_court(court_themes$light) +
-  geom_point(data = bucks17, aes(x = x, y = y, color = isShotMade, fill = isShotMade),alpha = .3, size = 1.5, shape = 21, stroke = .5) +  
+  geom_point(data = bucks17, aes(x = x, y = y, color = isShotMade, fill = isShotMade),alpha = .5, size = 1.5, shape = 21, stroke = .5) +  
   scale_color_manual(values = c("#009429","#F7A500"), aesthetics = "color", breaks=c("TRUE", "FALSE"), labels=c("Made", "Missed")) +
   scale_fill_manual(values = c("#009429","#F7A500"), aesthetics = "fill", breaks=c("TRUE", "FALSE"), labels=c("Made", "Missed")) +
   scale_x_continuous(limits = c(-27.5, 27.5)) +
@@ -197,7 +197,7 @@ bucks19 <- bucks19 %>% mutate(x = as.numeric(as.character(locationX)) / 10, y = 
 bucks19$x <- bucks19$x * -1 
 #Creating the Chart
 p1 <- plot_court(court_themes$light) +
-  geom_point(data = bucks19, aes(x = x, y = y, color = isShotMade, fill = isShotMade),alpha = .3, size = 1.5, shape = 21, stroke = .5) +  
+  geom_point(data = bucks19, aes(x = x, y = y, color = isShotMade, fill = isShotMade),alpha = .5, size = 1.5, shape = 21, stroke = .5) +  
   scale_color_manual(values = c("#009429","#F7A500"), aesthetics = "color", breaks=c("TRUE", "FALSE"), labels=c("Made", "Missed")) +
   scale_fill_manual(values = c("#009429","#F7A500"), aesthetics = "fill", breaks=c("TRUE", "FALSE"), labels=c("Made", "Missed")) +
   scale_x_continuous(limits = c(-27.5, 27.5)) +
@@ -231,7 +231,7 @@ bucks21 <- bucks21 %>% mutate(x = as.numeric(as.character(locationX)) / 10, y = 
 bucks21$x <- bucks21$x * -1 
 #Creating the chart
 p1 <- plot_court(court_themes$light) +
-  geom_point(data = bucks21, aes(x = x, y = y, color = isShotMade, fill = isShotMade),alpha = 0.3, size = 1.5, shape = 21, stroke = .5) +  
+  geom_point(data = bucks21, aes(x = x, y = y, color = isShotMade, fill = isShotMade),alpha = 0.5, size = 1.5, shape = 21, stroke = .5) +  
   scale_color_manual(values = c("#009429","#F7A500"), aesthetics = "color", breaks=c("TRUE", "FALSE"), labels=c("Made", "Missed")) +
   scale_fill_manual(values = c("#009429","#F7A500"), aesthetics = "fill", breaks=c("TRUE", "FALSE"), labels=c("Made", "Missed")) +
   scale_x_continuous(limits = c(-27.5, 27.5)) +
